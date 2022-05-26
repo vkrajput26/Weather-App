@@ -37,9 +37,11 @@ h1{
     text-align: center;
 }
 #city{
-    width: 60%;
-    margin-left: 84px;
-
+    width: 80%;
+    /* margin-left: 84px; */
+    border-radius: 14px;
+    margin: auto;
+    height: 24px;
 }
 #submit{
     margin-left: 194px;
@@ -62,15 +64,18 @@ h1{
     width: 50%;
    
 }
+#anchor{
+    color: rgb(9, 9, 36);
+}
 </style>
 <body>
-    <a href="/forcastNextDays.html"><p>Forcast For Next days</p></a>
+    <a id="anchor" href="/forcastNextDays.html"><p>Forcast For Next days</p></a>
 
     <div id="box">
-    <button onclick="getweather()" id="get-weather">Know wheather by-location
+    <button onclick="getweather()" id="get-weather">Know weather by-location
     
     </button>
-    <h1>Wheather Report</h1>
+    <h1>Weather Report</h1>
     <input type="text" name="" id="city" placeholder="Enter Location">
     <button onclick="getData()" id="submit">Submit</button>
     <div id="forcast"></div>
