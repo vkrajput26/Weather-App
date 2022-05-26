@@ -104,6 +104,8 @@ sunrise.setAttribute("id","sunrise")
 
     container.append(div)
     
+   // let masterBox=document.createElement("div")
+    
     localStorage.setItem("city",JSON.stringify(data.name))
 
 }

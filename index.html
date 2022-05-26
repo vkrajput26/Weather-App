@@ -12,7 +12,7 @@
       background-image: url("https://images.pexels.com/photos/163255/sunrise-sun-morgenrot-skies-163255.jpeg?cs=srgb&dl=pexels-pixabay-163255.jpg&fm=jpg");
     }
     #gmap_canvas{
-    border: 1px solid black;
+   
   margin-left: 744px;
         margin-bottom: 444px;
        
@@ -21,7 +21,7 @@
 #div-main
 {
     border: 1px solid black;
-    width: 25%;
+    width: 125%;
     margin-top: 44px;
     background-color: blueviolet;
     
@@ -52,6 +52,16 @@ h1{
 #sunrise{
     background-image: url("https://ssl.gstatic.com/onebox/weather/64/sunny.png");
 }
+#mainn{
+    display: flex;
+    justify-content: space-around;
+   
+}
+#container{
+    height: 444px;
+    width: 50%;
+   
+}
 </style>
 <body>
     <a href="/forcastNextDays.html"><p>Forcast For Next days</p></a>
@@ -65,7 +75,7 @@ h1{
     <button onclick="getData()" id="submit">Submit</button>
     <div id="forcast"></div>
 </div>
-   
+   <div id="mainn">
     <div id="container"></div>
     <div class="mapouter">
         <div class="gmap_canvas">
@@ -81,6 +91,8 @@ h1{
            
             
         </div></div>
+
+    </div>
 </body>
 </html>
 <script src="index.js"></script>
